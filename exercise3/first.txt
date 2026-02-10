@@ -1,0 +1,22 @@
+import fs from "fs";
+function loginsturdent(id,name,emial,password){
+    try{
+        if(fs.exitsSync("todo.json")){
+            let data=JSON.parse(fs.readFileSync("todo.json","utf-8"))
+            let isUser=data.some(value)=>{
+                if(value.name===name)&&(value.password===password&&&(value.email===emial))
+                return true
+            }
+        })
+        if(isUser){
+            return "User exit"
+
+        }
+        else{
+            return false
+        }
+
+
+        }
+    }
+}
